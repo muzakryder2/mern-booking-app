@@ -12,7 +12,7 @@ function MyHotels() {
     apiClient.fetchMyHotels,
     {
       onError: () => {
-        showToast()
+        showToast({ message: 'Failed to fetch hotels', type: 'ERROR' })
       },
     }
   )
